@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+appledoc \
+    --project-name 'Intern::Bookmark' \
+    --project-company 'Hatena Inc.' \
+    --ignore 'Pods' \
+    --output 'Documents' \
+    --create-html \
+    --no-create-docset \
+    .

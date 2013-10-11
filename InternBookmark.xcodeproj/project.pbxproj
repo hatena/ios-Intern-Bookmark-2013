@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		091784861797C18B007D9CA3 /* UIAlertView+NSError.m in Sources */ = {isa = PBXBuildFile; fileRef = 091784851797C18B007D9CA3 /* UIAlertView+NSError.m */; };
+		091784891797C463007D9CA3 /* NSDateFormatter+MySQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 091784881797C463007D9CA3 /* NSDateFormatter+MySQL.m */; };
+		0990AEBA1794FB37003906DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990AEB91794FB37003906DD /* UIKit.framework */; };
+		0990AEBC1794FB37003906DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990AEBB1794FB37003906DD /* Foundation.framework */; };
+		0990AEBE1794FB37003906DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990AEBD1794FB37003906DD /* CoreGraphics.framework */; };
+		0990AEC41794FB37003906DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0990AEC21794FB37003906DD /* InfoPlist.strings */; };
+		0990AEC61794FB37003906DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AEC51794FB37003906DD /* main.m */; };
+		0990AECA1794FB37003906DD /* IBKMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AEC91794FB37003906DD /* IBKMAppDelegate.m */; };
+		0990AECC1794FB37003906DD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0990AECB1794FB37003906DD /* Default.png */; };
+		0990AECE1794FB37003906DD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0990AECD1794FB37003906DD /* Default@2x.png */; };
+		0990AED01794FB37003906DD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0990AECF1794FB37003906DD /* Default-568h@2x.png */; };
+		0990AED31794FB37003906DD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0990AED11794FB37003906DD /* MainStoryboard.storyboard */; };
+		0990AEE11794FB37003906DD /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990AEE01794FB37003906DD /* SenTestingKit.framework */; };
+		0990AEE21794FB37003906DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990AEB91794FB37003906DD /* UIKit.framework */; };
+		0990AEE31794FB37003906DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0990AEBB1794FB37003906DD /* Foundation.framework */; };
+		0990AEEB1794FB37003906DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0990AEE91794FB37003906DD /* InfoPlist.strings */; };
+		0990AEEE1794FB37003906DD /* InternBookmarkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AEED1794FB37003906DD /* InternBookmarkTests.m */; };
+		0990AEFD17951091003906DD /* IBKMBookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AEFC17951091003906DD /* IBKMBookmarksViewController.m */; };
+		0990AF00179510B1003906DD /* IBKMBookmarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AEFF179510B1003906DD /* IBKMBookmarkViewController.m */; };
+		0990AF0417951698003906DD /* IBKMInternBookmarkAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF0317951698003906DD /* IBKMInternBookmarkAPIClient.m */; };
+		0990AF07179522F0003906DD /* IBKMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF06179522F0003906DD /* IBKMLoginViewController.m */; };
+		0990AF0A17953705003906DD /* IBKMBookmarkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF0917953705003906DD /* IBKMBookmarkManager.m */; };
+		0990AF0D17953710003906DD /* IBKMBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF0C17953710003906DD /* IBKMBookmark.m */; };
+		0990AF1017953718003906DD /* IBKMEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF0F17953718003906DD /* IBKMEntry.m */; };
+		0990AF1317953722003906DD /* IBKMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF1217953722003906DD /* IBKMUser.m */; };
+		10C7E5DB599340F7B975DA18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7052D6C1318040F68A99BA46 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0990AEE41794FB37003906DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0990AEAE1794FB37003906DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0990AEB51794FB37003906DD;
+			remoteInfo = InternBookmark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		091784841797C18B007D9CA3 /* UIAlertView+NSError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+NSError.h"; sourceTree = "<group>"; };
+		091784851797C18B007D9CA3 /* UIAlertView+NSError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+NSError.m"; sourceTree = "<group>"; };
+		091784871797C463007D9CA3 /* NSDateFormatter+MySQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+MySQL.h"; sourceTree = "<group>"; };
+		091784881797C463007D9CA3 /* NSDateFormatter+MySQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+MySQL.m"; sourceTree = "<group>"; };
+		0990AEB61794FB37003906DD /* InternBookmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InternBookmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0990AEB91794FB37003906DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0990AEBB1794FB37003906DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0990AEBD1794FB37003906DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0990AEC11794FB37003906DD /* InternBookmark-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InternBookmark-Info.plist"; sourceTree = "<group>"; };
+		0990AEC31794FB37003906DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0990AEC51794FB37003906DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0990AEC71794FB37003906DD /* InternBookmark-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InternBookmark-Prefix.pch"; sourceTree = "<group>"; };
+		0990AEC81794FB37003906DD /* IBKMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBKMAppDelegate.h; sourceTree = "<group>"; };
+		0990AEC91794FB37003906DD /* IBKMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IBKMAppDelegate.m; sourceTree = "<group>"; };
+		0990AECB1794FB37003906DD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		0990AECD1794FB37003906DD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		0990AECF1794FB37003906DD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		0990AED21794FB37003906DD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		0990AEDF1794FB37003906DD /* InternBookmarkTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InternBookmarkTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0990AEE01794FB37003906DD /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0990AEE81794FB37003906DD /* InternBookmarkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InternBookmarkTests-Info.plist"; sourceTree = "<group>"; };
+		0990AEEA1794FB37003906DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0990AEEC1794FB37003906DD /* InternBookmarkTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InternBookmarkTests.h; sourceTree = "<group>"; };
+		0990AEED1794FB37003906DD /* InternBookmarkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InternBookmarkTests.m; sourceTree = "<group>"; };
+		0990AEFB17951091003906DD /* IBKMBookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMBookmarksViewController.h; sourceTree = "<group>"; };
+		0990AEFC17951091003906DD /* IBKMBookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMBookmarksViewController.m; sourceTree = "<group>"; };
+		0990AEFE179510B0003906DD /* IBKMBookmarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMBookmarkViewController.h; sourceTree = "<group>"; };
+		0990AEFF179510B1003906DD /* IBKMBookmarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMBookmarkViewController.m; sourceTree = "<group>"; };
+		0990AF0217951698003906DD /* IBKMInternBookmarkAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMInternBookmarkAPIClient.h; sourceTree = "<group>"; };
+		0990AF0317951698003906DD /* IBKMInternBookmarkAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMInternBookmarkAPIClient.m; sourceTree = "<group>"; };
+		0990AF05179522F0003906DD /* IBKMLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMLoginViewController.h; sourceTree = "<group>"; };
+		0990AF06179522F0003906DD /* IBKMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMLoginViewController.m; sourceTree = "<group>"; };
+		0990AF0817953705003906DD /* IBKMBookmarkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMBookmarkManager.h; sourceTree = "<group>"; };
+		0990AF0917953705003906DD /* IBKMBookmarkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMBookmarkManager.m; sourceTree = "<group>"; };
+		0990AF0B17953710003906DD /* IBKMBookmark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMBookmark.h; sourceTree = "<group>"; };
+		0990AF0C17953710003906DD /* IBKMBookmark.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMBookmark.m; sourceTree = "<group>"; };
+		0990AF0E17953718003906DD /* IBKMEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMEntry.h; sourceTree = "<group>"; };
+		0990AF0F17953718003906DD /* IBKMEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMEntry.m; sourceTree = "<group>"; };
+		0990AF1117953722003906DD /* IBKMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMUser.h; sourceTree = "<group>"; };
+		0990AF1217953722003906DD /* IBKMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMUser.m; sourceTree = "<group>"; };
+		13A58B1510F643F18EC30752 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		7052D6C1318040F68A99BA46 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0990AEB31794FB37003906DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0990AEBA1794FB37003906DD /* UIKit.framework in Frameworks */,
+				0990AEBC1794FB37003906DD /* Foundation.framework in Frameworks */,
+				0990AEBE1794FB37003906DD /* CoreGraphics.framework in Frameworks */,
+				10C7E5DB599340F7B975DA18 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0990AEDB1794FB37003906DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0990AEE11794FB37003906DD /* SenTestingKit.framework in Frameworks */,
+				0990AEE21794FB37003906DD /* UIKit.framework in Frameworks */,
+				0990AEE31794FB37003906DD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0990AEAD1794FB37003906DD = {
+			isa = PBXGroup;
+			children = (
+				0990AEBF1794FB37003906DD /* InternBookmark */,
+				0990AEE61794FB37003906DD /* InternBookmarkTests */,
+				0990AEB81794FB37003906DD /* Frameworks */,
+				0990AEB71794FB37003906DD /* Products */,
+				13A58B1510F643F18EC30752 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0990AEB71794FB37003906DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEB61794FB37003906DD /* InternBookmark.app */,
+				0990AEDF1794FB37003906DD /* InternBookmarkTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0990AEB81794FB37003906DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEB91794FB37003906DD /* UIKit.framework */,
+				0990AEBB1794FB37003906DD /* Foundation.framework */,
+				0990AEBD1794FB37003906DD /* CoreGraphics.framework */,
+				0990AEE01794FB37003906DD /* SenTestingKit.framework */,
+				7052D6C1318040F68A99BA46 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0990AEBF1794FB37003906DD /* InternBookmark */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEF917950F63003906DD /* Classes */,
+				0990AED11794FB37003906DD /* MainStoryboard.storyboard */,
+				0990AEC01794FB37003906DD /* Supporting Files */,
+			);
+			path = InternBookmark;
+			sourceTree = "<group>";
+		};
+		0990AEC01794FB37003906DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEC11794FB37003906DD /* InternBookmark-Info.plist */,
+				0990AEC21794FB37003906DD /* InfoPlist.strings */,
+				0990AEC51794FB37003906DD /* main.m */,
+				0990AEC71794FB37003906DD /* InternBookmark-Prefix.pch */,
+				0990AECB1794FB37003906DD /* Default.png */,
+				0990AECD1794FB37003906DD /* Default@2x.png */,
+				0990AECF1794FB37003906DD /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0990AEE61794FB37003906DD /* InternBookmarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEEC1794FB37003906DD /* InternBookmarkTests.h */,
+				0990AEED1794FB37003906DD /* InternBookmarkTests.m */,
+				0990AEE71794FB37003906DD /* Supporting Files */,
+			);
+			path = InternBookmarkTests;
+			sourceTree = "<group>";
+		};
+		0990AEE71794FB37003906DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEE81794FB37003906DD /* InternBookmarkTests-Info.plist */,
+				0990AEE91794FB37003906DD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0990AEF917950F63003906DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEC81794FB37003906DD /* IBKMAppDelegate.h */,
+				0990AEC91794FB37003906DD /* IBKMAppDelegate.m */,
+				0990AF011795165F003906DD /* Models */,
+				0990AEFA17950F97003906DD /* Controllers */,
+				0990AF1417953AAF003906DD /* Utilities */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0990AEFA17950F97003906DD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0990AEFB17951091003906DD /* IBKMBookmarksViewController.h */,
+				0990AEFC17951091003906DD /* IBKMBookmarksViewController.m */,
+				0990AEFE179510B0003906DD /* IBKMBookmarkViewController.h */,
+				0990AEFF179510B1003906DD /* IBKMBookmarkViewController.m */,
+				0990AF05179522F0003906DD /* IBKMLoginViewController.h */,
+				0990AF06179522F0003906DD /* IBKMLoginViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0990AF011795165F003906DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0990AF0217951698003906DD /* IBKMInternBookmarkAPIClient.h */,
+				0990AF0317951698003906DD /* IBKMInternBookmarkAPIClient.m */,
+				0990AF0817953705003906DD /* IBKMBookmarkManager.h */,
+				0990AF0917953705003906DD /* IBKMBookmarkManager.m */,
+				09B86F5017967C0700F83A29 /* Data Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0990AF1417953AAF003906DD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				091784841797C18B007D9CA3 /* UIAlertView+NSError.h */,
+				091784851797C18B007D9CA3 /* UIAlertView+NSError.m */,
+				091784871797C463007D9CA3 /* NSDateFormatter+MySQL.h */,
+				091784881797C463007D9CA3 /* NSDateFormatter+MySQL.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		09B86F5017967C0700F83A29 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+				0990AF0B17953710003906DD /* IBKMBookmark.h */,
+				0990AF0C17953710003906DD /* IBKMBookmark.m */,
+				0990AF0E17953718003906DD /* IBKMEntry.h */,
+				0990AF0F17953718003906DD /* IBKMEntry.m */,
+				0990AF1117953722003906DD /* IBKMUser.h */,
+				0990AF1217953722003906DD /* IBKMUser.m */,
+			);
+			name = "Data Models";
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0990AEB51794FB37003906DD /* InternBookmark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0990AEF11794FB37003906DD /* Build configuration list for PBXNativeTarget "InternBookmark" */;
+			buildPhases = (
+				1396DB8CEF9C428D86128F2B /* Check Pods Manifest.lock */,
+				0990AEB21794FB37003906DD /* Sources */,
+				0990AEB31794FB37003906DD /* Frameworks */,
+				0990AEB41794FB37003906DD /* Resources */,
+				4CEC585C2B49444F97713643 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InternBookmark;
+			productName = InternBookmark;
+			productReference = 0990AEB61794FB37003906DD /* InternBookmark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0990AEDE1794FB37003906DD /* InternBookmarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0990AEF41794FB37003906DD /* Build configuration list for PBXNativeTarget "InternBookmarkTests" */;
+			buildPhases = (
+				0990AEDA1794FB37003906DD /* Sources */,
+				0990AEDB1794FB37003906DD /* Frameworks */,
+				0990AEDC1794FB37003906DD /* Resources */,
+				0990AEDD1794FB37003906DD /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0990AEE51794FB37003906DD /* PBXTargetDependency */,
+			);
+			name = InternBookmarkTests;
+			productName = InternBookmarkTests;
+			productReference = 0990AEDF1794FB37003906DD /* InternBookmarkTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0990AEAE1794FB37003906DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = IBKM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "株式会社はてな";
+			};
+			buildConfigurationList = 0990AEB11794FB37003906DD /* Build configuration list for PBXProject "InternBookmark" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0990AEAD1794FB37003906DD;
+			productRefGroup = 0990AEB71794FB37003906DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0990AEB51794FB37003906DD /* InternBookmark */,
+				0990AEDE1794FB37003906DD /* InternBookmarkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0990AEB41794FB37003906DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0990AEC41794FB37003906DD /* InfoPlist.strings in Resources */,
+				0990AECC1794FB37003906DD /* Default.png in Resources */,
+				0990AECE1794FB37003906DD /* Default@2x.png in Resources */,
+				0990AED01794FB37003906DD /* Default-568h@2x.png in Resources */,
+				0990AED31794FB37003906DD /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0990AEDC1794FB37003906DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0990AEEB1794FB37003906DD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0990AEDD1794FB37003906DD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+		1396DB8CEF9C428D86128F2B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4CEC585C2B49444F97713643 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0990AEB21794FB37003906DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0990AEC61794FB37003906DD /* main.m in Sources */,
+				0990AECA1794FB37003906DD /* IBKMAppDelegate.m in Sources */,
+				0990AEFD17951091003906DD /* IBKMBookmarksViewController.m in Sources */,
+				0990AF00179510B1003906DD /* IBKMBookmarkViewController.m in Sources */,
+				0990AF0417951698003906DD /* IBKMInternBookmarkAPIClient.m in Sources */,
+				0990AF07179522F0003906DD /* IBKMLoginViewController.m in Sources */,
+				0990AF0A17953705003906DD /* IBKMBookmarkManager.m in Sources */,
+				0990AF0D17953710003906DD /* IBKMBookmark.m in Sources */,
+				0990AF1017953718003906DD /* IBKMEntry.m in Sources */,
+				0990AF1317953722003906DD /* IBKMUser.m in Sources */,
+				091784861797C18B007D9CA3 /* UIAlertView+NSError.m in Sources */,
+				091784891797C463007D9CA3 /* NSDateFormatter+MySQL.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0990AEDA1794FB37003906DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0990AEEE1794FB37003906DD /* InternBookmarkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0990AEE51794FB37003906DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0990AEB51794FB37003906DD /* InternBookmark */;
+			targetProxy = 0990AEE41794FB37003906DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0990AEC21794FB37003906DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0990AEC31794FB37003906DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0990AED11794FB37003906DD /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0990AED21794FB37003906DD /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		0990AEE91794FB37003906DD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0990AEEA1794FB37003906DD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0990AEEF1794FB37003906DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0990AEF01794FB37003906DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0990AEF21794FB37003906DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A58B1510F643F18EC30752 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InternBookmark/InternBookmark-Prefix.pch";
+				INFOPLIST_FILE = "InternBookmark/InternBookmark-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0990AEF31794FB37003906DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A58B1510F643F18EC30752 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InternBookmark/InternBookmark-Prefix.pch";
+				INFOPLIST_FILE = "InternBookmark/InternBookmark-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0990AEF51794FB37003906DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InternBookmark.app/InternBookmark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InternBookmark/InternBookmark-Prefix.pch";
+				INFOPLIST_FILE = "InternBookmarkTests/InternBookmarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0990AEF61794FB37003906DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/InternBookmark.app/InternBookmark";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InternBookmark/InternBookmark-Prefix.pch";
+				INFOPLIST_FILE = "InternBookmarkTests/InternBookmarkTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0990AEB11794FB37003906DD /* Build configuration list for PBXProject "InternBookmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0990AEEF1794FB37003906DD /* Debug */,
+				0990AEF01794FB37003906DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0990AEF11794FB37003906DD /* Build configuration list for PBXNativeTarget "InternBookmark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0990AEF21794FB37003906DD /* Debug */,
+				0990AEF31794FB37003906DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0990AEF41794FB37003906DD /* Build configuration list for PBXNativeTarget "InternBookmarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0990AEF51794FB37003906DD /* Debug */,
+				0990AEF61794FB37003906DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0990AEAE1794FB37003906DD /* Project object */;
+}
