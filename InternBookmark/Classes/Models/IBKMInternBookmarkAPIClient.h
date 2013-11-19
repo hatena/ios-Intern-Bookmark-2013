@@ -6,12 +6,12 @@
 //  Copyright (c) 2013年 株式会社はてな. All rights reserved.
 //
 
-#import "AFHTTPClient.h"
+#import "AFHTTPSessionManager.h"
 
 @protocol IBKMInternBookmarkAPIClientDelegate;
 
 /** Intern::Bookmark サーバーとの API を介したやりとりを抽象化する */
-@interface IBKMInternBookmarkAPIClient : AFHTTPClient
+@interface IBKMInternBookmarkAPIClient : AFHTTPSessionManager
 
 /** delegate オブジェクト */
 @property (nonatomic, weak) id <NSObject, IBKMInternBookmarkAPIClientDelegate> delegate;

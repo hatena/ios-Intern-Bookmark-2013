@@ -8,8 +8,6 @@
 
 #import "IBKMInternBookmarkAPIClient.h"
 
-#import "AFJSONRequestOperation.h"
-
 static NSString * const kIBKMInternBookmarkAPIBaseURLString = @"http://localhost:3000/";
 
 @implementation IBKMInternBookmarkAPIClient
@@ -25,25 +23,17 @@ static NSString * const kIBKMInternBookmarkAPIBaseURLString = @"http://localhost
     static IBKMInternBookmarkAPIClient *_sharedClient = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _sharedClient = [[IBKMInternBookmarkAPIClient alloc] initWithBaseURL:[NSURL URLWithString:kIBKMInternBookmarkAPIBaseURLString]];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+        configuration.HTTPAdditionalHeaders = @{
+                @"Accept" : @"application/json",
+        };
+
+        _sharedClient = [[IBKMInternBookmarkAPIClient alloc]
+                initWithBaseURL:[NSURL URLWithString:kIBKMInternBookmarkAPIBaseURLString]
+           sessionConfiguration:configuration];
     });
 
     return _sharedClient;
-}
-
-- (instancetype)initWithBaseURL:(NSURL *)url
-{
-    self = [super initWithBaseURL:url];
-    if (!self) {
-        return nil;
-    }
-
-    [self registerHTTPOperationClass:[AFJSONRequestOperation class]];
-
-    // Accept HTTP Header; see http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.1
-    [self setDefaultHeader:@"Accept" value:@"application/json"];
-
-    return self;
 }
 
 /* ログインが必要なとき呼び出すメソッド
@@ -63,44 +53,44 @@ static NSString * const kIBKMInternBookmarkAPIBaseURLString = @"http://localhost
 
 - (void)getBookmarksWithPerPage:(NSUInteger)perPage page:(NSUInteger)page completion:(void (^)(NSDictionary *results, NSError *error))block
 {
-    [self getPath:@"/api/bookmarks"
-       parameters:@{
-               @"per_page" : @(perPage),
-               @"page"     : @(page),
-       }
-          success:^(AFHTTPRequestOperation *operation, id responseObject) {
-              if (block) block(responseObject, nil);
+    [self GET:@"/api/bookmarks"
+   parameters:@{
+           @"per_page" : @(perPage),
+           @"page"     : @(page),
+   }
+      success:^(NSURLSessionDataTask *task, id responseObject) {
+          if (block) block(responseObject, nil);
+      }
+      failure:^(NSURLSessionDataTask *task, NSError *error) {
+          // 401 が返ったときログインが必要.
+          if (((NSHTTPURLResponse *)task.response).statusCode == 401 && [self needsLogin]) {
+              if (block) block(nil, nil);
           }
-          failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-              // 401 が返ったときログインが必要.
-              if (operation.response.statusCode == 401 && [self needsLogin]) {
-                  if (block) block(nil, nil);
-              }
-              else {
-                  if (block) block(nil, error);
-              }
-          }];
+          else {
+              if (block) block(nil, error);
+          }
+      }];
 }
 
 - (void)postBookmarkWithURL:(NSURL *)URL comment:(NSString *)comment comletion:(void (^)(NSDictionary *results, NSError *error))block
 {
-    [self postPath:@"/api/bookmark"
-        parameters:@{
-                @"url"     : [URL absoluteString],
-                @"comment" : comment,
-        }
-           success:^(AFHTTPRequestOperation *operation, id responseObject) {
-               if (block) block(responseObject, nil);
+    [self POST:@"/api/bookmark"
+    parameters:@{
+            @"url"     : [URL absoluteString],
+            @"comment" : comment,
+    }
+       success:^(NSURLSessionDataTask *task, id responseObject) {
+           if (block) block(responseObject, nil);
+       }
+       failure:^(NSURLSessionDataTask *task, NSError *error) {
+           // 401 が返ったときログインが必要.
+           if (((NSHTTPURLResponse *)task.response).statusCode == 401 && [self needsLogin]) {
+               if (block) block(nil, nil);
            }
-           failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-               // 401 が返ったときログインが必要.
-               if (operation.response.statusCode == 401 && [self needsLogin]) {
-                   if (block) block(nil, nil);
-               }
-               else {
-                   if (block) block(nil, error);
-               }
-           }];
+           else {
+               if (block) block(nil, error);
+           }
+       }];
 }
 
 @end
