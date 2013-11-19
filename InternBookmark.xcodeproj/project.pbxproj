@@ -32,6 +32,7 @@
 		0990AF0D17953710003906DD /* IBKMBookmark.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF0C17953710003906DD /* IBKMBookmark.m */; };
 		0990AF1017953718003906DD /* IBKMEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF0F17953718003906DD /* IBKMEntry.m */; };
 		0990AF1317953722003906DD /* IBKMUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0990AF1217953722003906DD /* IBKMUser.m */; };
+		09ADBB96183B63B900DA6490 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09ADBB95183B63B900DA6490 /* Images.xcassets */; };
 		10C7E5DB599340F7B975DA18 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7052D6C1318040F68A99BA46 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		0990AF0F17953718003906DD /* IBKMEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMEntry.m; sourceTree = "<group>"; };
 		0990AF1117953722003906DD /* IBKMUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IBKMUser.h; sourceTree = "<group>"; };
 		0990AF1217953722003906DD /* IBKMUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IBKMUser.m; sourceTree = "<group>"; };
+		09ADBB95183B63B900DA6490 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		13A58B1510F643F18EC30752 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		7052D6C1318040F68A99BA46 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -152,6 +154,7 @@
 			children = (
 				0990AEF917950F63003906DD /* Classes */,
 				0990AED11794FB37003906DD /* MainStoryboard.storyboard */,
+				09ADBB95183B63B900DA6490 /* Images.xcassets */,
 				0990AEC01794FB37003906DD /* Supporting Files */,
 			);
 			path = InternBookmark;
@@ -329,6 +332,7 @@
 				0990AEC41794FB37003906DD /* InfoPlist.strings in Resources */,
 				0990AECC1794FB37003906DD /* Default.png in Resources */,
 				0990AECE1794FB37003906DD /* Default@2x.png in Resources */,
+				09ADBB96183B63B900DA6490 /* Images.xcassets in Resources */,
 				0990AED01794FB37003906DD /* Default-568h@2x.png in Resources */,
 				0990AED31794FB37003906DD /* MainStoryboard.storyboard in Resources */,
 			);
@@ -517,10 +521,12 @@
 			baseConfigurationReference = 13A58B1510F643F18EC30752 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InternBookmark/InternBookmark-Prefix.pch";
 				INFOPLIST_FILE = "InternBookmark/InternBookmark-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -531,10 +537,12 @@
 			baseConfigurationReference = 13A58B1510F643F18EC30752 /* Pods.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "InternBookmark/InternBookmark-Prefix.pch";
 				INFOPLIST_FILE = "InternBookmark/InternBookmark-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
