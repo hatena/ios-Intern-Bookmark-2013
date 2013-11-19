@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -22,34 +23,34 @@
         <!--Bookmarks View Controller - Master-->
         <scene sceneID="18">
             <objects>
-                <tableViewController storyboardIdentifier="" title="Master" id="12" customClass="IBKMBookmarksViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                <tableViewController title="Master" id="12" customClass="IBKMBookmarksViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IBKMBookmarkCell" textLabel="phq-AM-6qj" detailTextLabel="b6t-HL-tbO" style="IBUITableViewCellStyleSubtitle" id="lJ0-d7-vTF">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lJ0-d7-vTF" id="Jcy-pz-oEP">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="phq-AM-6qj">
-                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <rect key="frame" x="15" y="2" width="36" height="22"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b6t-HL-tbO">
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b6t-HL-tbO">
+                                            <rect key="frame" x="15" y="24" width="37" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                     </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                                </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="rGe-gm-eGe" kind="push" identifier="IBKMOpenBookmarkSegue" id="m2l-tT-hZC"/>
@@ -81,11 +82,16 @@
         <scene sceneID="RzG-aA-SPo">
             <objects>
                 <viewController id="rGe-gm-eGe" customClass="IBKMBookmarkViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uhB-Ll-4M3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ufh-Tf-htG"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mhR-O3-VoM">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="URL" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMe-7A-1om">
+                                <rect key="frame" x="20" y="72" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -93,6 +99,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Comment" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="43j-zX-4uQ">
+                                <rect key="frame" x="20" y="110" width="280" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -100,9 +107,10 @@
                                 </connections>
                             </textField>
                             <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UC0-zL-9bB">
+                                <rect key="frame" x="0.0" y="148" width="320" height="420"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" type="user" id="cmM-9H-UzO"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" id="cmM-9H-UzO"/>
                                 </constraints>
                                 <connections>
                                     <outlet property="delegate" destination="rGe-gm-eGe" id="Wie-Vy-eEh"/>
@@ -111,17 +119,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="CMe-7A-1om" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9TP-tu-lsA"/>
-                            <constraint firstItem="CMe-7A-1om" firstAttribute="leading" secondItem="mhR-O3-VoM" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Ack-Hk-xpc"/>
-                            <constraint firstItem="UC0-zL-9bB" firstAttribute="leading" secondItem="mhR-O3-VoM" secondAttribute="leading" type="default" id="B7b-Oy-rZg"/>
-                            <constraint firstItem="43j-zX-4uQ" firstAttribute="top" secondItem="CMe-7A-1om" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="ECJ-9B-sY3"/>
-                            <constraint firstItem="UC0-zL-9bB" firstAttribute="top" secondItem="43j-zX-4uQ" secondAttribute="bottom" constant="8" symbolic="YES" type="user" id="Eni-Dz-rPs"/>
-                            <constraint firstItem="UC0-zL-9bB" firstAttribute="bottom" secondItem="mhR-O3-VoM" secondAttribute="bottom" priority="900" type="user" id="LL9-qr-4Ak"/>
-                            <constraint firstItem="43j-zX-4uQ" firstAttribute="leading" secondItem="mhR-O3-VoM" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="PIu-6v-Ys2"/>
-                            <constraint firstItem="UC0-zL-9bB" firstAttribute="trailing" secondItem="mhR-O3-VoM" secondAttribute="trailing" type="default" id="WEo-bT-CGS"/>
-                            <constraint firstAttribute="trailing" secondItem="43j-zX-4uQ" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="aBx-bw-yRU"/>
-                            <constraint firstItem="CMe-7A-1om" firstAttribute="top" secondItem="mhR-O3-VoM" secondAttribute="top" constant="20" symbolic="YES" type="user" id="ejP-0c-EdN"/>
-                            <constraint firstItem="UC0-zL-9bB" firstAttribute="top" secondItem="mhR-O3-VoM" secondAttribute="top" constant="96" type="user" id="vGB-XB-rWs"/>
+                            <constraint firstAttribute="trailing" secondItem="CMe-7A-1om" secondAttribute="trailing" constant="20" symbolic="YES" id="9TP-tu-lsA"/>
+                            <constraint firstItem="CMe-7A-1om" firstAttribute="leading" secondItem="mhR-O3-VoM" secondAttribute="leading" constant="20" symbolic="YES" id="Ack-Hk-xpc"/>
+                            <constraint firstItem="UC0-zL-9bB" firstAttribute="leading" secondItem="mhR-O3-VoM" secondAttribute="leading" id="B7b-Oy-rZg"/>
+                            <constraint firstItem="43j-zX-4uQ" firstAttribute="top" secondItem="CMe-7A-1om" secondAttribute="bottom" constant="8" symbolic="YES" id="ECJ-9B-sY3"/>
+                            <constraint firstItem="UC0-zL-9bB" firstAttribute="top" secondItem="43j-zX-4uQ" secondAttribute="bottom" constant="8" symbolic="YES" id="Eni-Dz-rPs"/>
+                            <constraint firstItem="UC0-zL-9bB" firstAttribute="bottom" secondItem="mhR-O3-VoM" secondAttribute="bottom" priority="900" id="LL9-qr-4Ak"/>
+                            <constraint firstItem="CMe-7A-1om" firstAttribute="top" secondItem="uhB-Ll-4M3" secondAttribute="bottom" constant="20" symbolic="YES" id="O8J-TT-lBY"/>
+                            <constraint firstItem="43j-zX-4uQ" firstAttribute="leading" secondItem="mhR-O3-VoM" secondAttribute="leading" constant="20" symbolic="YES" id="PIu-6v-Ys2"/>
+                            <constraint firstItem="UC0-zL-9bB" firstAttribute="trailing" secondItem="mhR-O3-VoM" secondAttribute="trailing" id="WEo-bT-CGS"/>
+                            <constraint firstAttribute="trailing" secondItem="43j-zX-4uQ" secondAttribute="trailing" constant="20" symbolic="YES" id="aBx-bw-yRU"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sLo-85-8fc">
@@ -161,11 +168,16 @@
         <scene sceneID="tfc-15-oQC">
             <objects>
                 <viewController id="6mE-lR-DZF" customClass="IBKMLoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZbW-Cs-W1b"/>
+                        <viewControllerLayoutGuide type="bottom" id="b1d-oT-pK4"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="haV-df-woD">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="svv-o7-EhM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <outlet property="delegate" destination="6mE-lR-DZF" id="lz6-mn-uNS"/>
@@ -174,10 +186,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="svv-o7-EhM" firstAttribute="trailing" secondItem="haV-df-woD" secondAttribute="trailing" type="default" id="0a3-Wz-1fy"/>
-                            <constraint firstItem="svv-o7-EhM" firstAttribute="bottom" secondItem="haV-df-woD" secondAttribute="bottom" type="default" id="Fbq-Uw-hZW"/>
-                            <constraint firstItem="svv-o7-EhM" firstAttribute="leading" secondItem="haV-df-woD" secondAttribute="leading" type="default" id="Jwn-uH-335"/>
-                            <constraint firstItem="svv-o7-EhM" firstAttribute="top" secondItem="haV-df-woD" secondAttribute="top" type="default" id="rVX-Kp-oDS"/>
+                            <constraint firstItem="svv-o7-EhM" firstAttribute="trailing" secondItem="haV-df-woD" secondAttribute="trailing" id="0a3-Wz-1fy"/>
+                            <constraint firstItem="svv-o7-EhM" firstAttribute="bottom" secondItem="haV-df-woD" secondAttribute="bottom" id="Fbq-Uw-hZW"/>
+                            <constraint firstItem="svv-o7-EhM" firstAttribute="leading" secondItem="haV-df-woD" secondAttribute="leading" id="Jwn-uH-335"/>
+                            <constraint firstItem="svv-o7-EhM" firstAttribute="top" secondItem="haV-df-woD" secondAttribute="top" id="rVX-Kp-oDS"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Login" id="xrL-IF-Kdo">
@@ -197,40 +209,6 @@
             <point key="canvasLocation" x="902" y="-736"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="IBKMBookmarkViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBKMBookmarkViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeLoginSegue:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="action" name="save:"/>
-                <relationship kind="outlet" name="URLField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="commentField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="keyboardHeight" candidateClass="NSLayoutConstraint"/>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="IBKMBookmarksViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBKMBookmarksViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="closeLoginSegue:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
-        </class>
-        <class className="IBKMLoginViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/IBKMLoginViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIRefreshControl" superclassName="UIControl">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIRefreshControl.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
