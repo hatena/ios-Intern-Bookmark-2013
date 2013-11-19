@@ -17,7 +17,7 @@
 #import "IBKMEntry.h"
 
 @interface IBKMBookmarkViewController ()
-
+@property (nonatomic, strong) id keyboardObserver;
 @end
 
 @implementation IBKMBookmarkViewController
@@ -46,10 +46,18 @@
     [self.webView loadRequest:request];
 
     // キーボードが出てきたりしたときの通知を受け取る.
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(keyboardWillChangeFrame:)
-                                                 name:UIKeyboardWillChangeFrameNotification
-                                               object:nil];
+    self.keyboardObserver = [[NSNotificationCenter defaultCenter]
+                             addObserverForName:UIKeyboardWillChangeFrameNotification
+                             object:nil
+                             queue:nil
+                             usingBlock:^(NSNotification *note) {
+                                 [self keyboardWillChangeFrame:note];
+                             }];
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self.keyboardObserver];
 }
 
 - (void)didReceiveMemoryWarning
