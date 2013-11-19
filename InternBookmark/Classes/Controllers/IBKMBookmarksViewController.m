@@ -45,6 +45,11 @@
     [self refreshBookmarks:self];
 }
 
+- (void)dealloc
+{
+    [[IBKMBookmarkManager sharedManager] removeObserver:self forKeyPath:@"bookmarks"];
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
