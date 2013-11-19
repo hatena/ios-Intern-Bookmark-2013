@@ -54,7 +54,7 @@ static NSString * const kIBKMInternBookmarkAPIBaseURLString = @"http://localhost
 */
 - (BOOL)needsLogin
 {
-    BOOL delegated = self.delegate && [self.delegate respondsToSelector:@selector(APIClientNeedsLogin:)];
+    BOOL delegated = [self.delegate respondsToSelector:@selector(APIClientNeedsLogin:)];
     if (delegated) {
         [self.delegate APIClientNeedsLogin:self];
     }
