@@ -72,18 +72,12 @@
 */
 - (void)keyboardWillChangeFrame:(NSNotification *)notification
 {
-    CGRect screenBounds = [UIScreen mainScreen].bounds; // 画面の bounds.
-    CGRect keyboardFrame = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue]; // 変化後のキーボードの frame.
+    CGRect keyboardRect = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue]; // 変化後のキーボードの frame.
+    keyboardRect = [self.view convertRect:keyboardRect fromView:nil];
     double animationDuration = [notification.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue]; // キーボードの高さが変わるアニメーションの時間.
 
-    // 端末が縦向き (portrait) か横向き (landscape) か.
-    BOOL isPortrait = UIDeviceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation);
-
     // キーボードの高さは画面の縦の長さからキーボードのy座標を引き算することで得られるはず.
-    // ただし landscape のときはちょっと変わる.
-    CGFloat keyboardHeight = isPortrait ?
-            (screenBounds.size.height - keyboardFrame.origin.y) :
-            (screenBounds.size.width - keyboardFrame.origin.x);
+    CGFloat keyboardHeight = self.view.bounds.size.height - keyboardRect.origin.y;
     // キーボードの高さを表す NSLayoutConstraint にキーボードの高さを設定する.
     // こうしておけば Auto Layout が働いていい感じに調整してくれる.
     self.keyboardHeight.constant = -keyboardHeight;
