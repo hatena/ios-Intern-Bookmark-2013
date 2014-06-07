@@ -72,7 +72,7 @@ static NSString * const kIBKMInternBookmarkAPIBaseURLString = @"http://localhost
       }];
 }
 
-- (void)postBookmarkWithURL:(NSURL *)URL comment:(NSString *)comment comletion:(void (^)(NSDictionary *results, NSError *error))block
+- (void)postBookmarkWithURL:(NSURL *)URL comment:(NSString *)comment completion:(void (^)(NSDictionary *results, NSError *error))block
 {
     [self POST:@"/api/bookmark"
     parameters:@{
