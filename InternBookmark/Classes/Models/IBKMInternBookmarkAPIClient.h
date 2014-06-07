@@ -48,7 +48,7 @@
 @param comment ブックマークコメント.
 @param block 完了時に呼び出される blocks.
 */
-- (void)postBookmarkWithURL:(NSURL *)URL comment:(NSString *)comment comletion:(void (^)(NSDictionary *results, NSError *error))block;
+- (void)postBookmarkWithURL:(NSURL *)URL comment:(NSString *)comment completion:(void (^)(NSDictionary *results, NSError *error))block;
 
 @end
 

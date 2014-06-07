@@ -52,7 +52,7 @@ static NSUInteger const kIBKMBookmarkManagerBookmarksPerPage = 20;
     [[IBKMInternBookmarkAPIClient sharedClient]
             postBookmarkWithURL:bookmark.entry.URL
                         comment:bookmark.comment
-                      comletion:^(NSDictionary *results, NSError *error) {
+                      completion:^(NSDictionary *results, NSError *error) {
                           if (results && [results isKindOfClass:[NSDictionary class]]) {
                               NSDictionary *bookmarkDictionary = results[@"bookmark"];
 
